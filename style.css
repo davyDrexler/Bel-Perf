@@ -1,0 +1,109 @@
+* {
+  font-family: "Roboto";
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.header .logo {
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.header .link {
+  display: flex;
+  margin-left: auto;
+}
+.header .link .link-maps {
+  font-size: 18px;
+  padding-top: 9px;
+}
+.header .link .link-form {
+  padding-left: 30px;
+  font-size: 24px;
+  padding-right: 20px;
+}
+
+.carroussel #banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 500px;
+  position: relative;
+  z-index: 3;
+}
+.carroussel .banner-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.carroussel .dots {
+  position: absolute;
+  bottom: 40px;
+  display: flex;
+}
+.carroussel .dot {
+  margin-inline: 5px;
+  width: 13px;
+  height: 13px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 3px solid #fff;
+  border-radius: 100%;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.carroussel .dot_selected {
+  background-color: #fff;
+}
+
+.info {
+  display: flex;
+  width: 100%;
+}
+.info .photo {
+  width: 30%;
+}
+.info .photo img {
+  z-index: 2;
+  position: relative;
+  border-radius: 50%;
+  width: 70%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 50px 100px;
+}
+.info .blue-bg {
+  background-color: rgb(108, 162, 255);
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+.info .blue-bg .white-round {
+  z-index: 1;
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+  width: 40%;
+  height: 110%;
+  left: -250px;
+  margin-top: -10px;
+}
+.info .blue-bg .texte {
+  padding-left: 90px;
+  width: 100%;
+}
+.info .blue-bg .texte .titre {
+  text-align: center;
+}
+.info .blue-bg .texte .description {
+  padding-left: 10%;
+  width: 80%;
+}/*# sourceMappingURL=style.css.map */
