@@ -1,11 +1,34 @@
+// Couleur 
+$black-bg: #201e20;
+$beige: #ddc3a5;
+$orange: #e0a96d;
+
 * {
     font-family: 'Roboto';
+    margin-left: 0px;
+    margin-right: 0px;
+
+    #titre {
+        font-size: 28px;
+        color: $beige;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+
+    #subtitle {
+        font-size: 18px;
+        color: $beige;
+        margin: 0;
+    }
 }
 
 .header {
     display: flex;
     width: 100%;
     align-items: center; 
+    background-color: $black-bg;
+    margin-top: -10px;
+    justify-content: space-between;
 
     .logo {
         padding: 0 20px; 
@@ -14,17 +37,23 @@
 
     .link {
         display: flex;
-        margin-left: auto;
+        color: $beige;
 
         .link-maps {
             font-size: 18px;
             padding-top: 9px;
         }
+    }
 
+    .form-button{
         .link-form {
-            padding-left: 30px;
+            padding: 10px 30px 10px 30px;
+            color: $black-bg;
+            background-color: $beige;
             font-size: 24px;
-            padding-right: 20px;
+            margin-right: 50px;
+            border-style: solid;
+            border-radius: 90px;
         }
     }
 }
@@ -36,7 +65,7 @@
         align-items: center;
         justify-content: center;
         width: 100%;
-        height: 500px;
+        height: 600px;
         position: relative;
         z-index: 3;
     }
@@ -55,10 +84,10 @@
     }
     .dot {
         margin-inline: 5px;
-        width: 13px;
-        height: 13px;
+        width: 7px;
+        height: 7px;
         background-color: #ffffff00;
-        border: 3px solid #fff;
+        border: 2px solid #fff;
         border-radius: 100%;
         box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);;
     }
@@ -70,6 +99,7 @@
 .info {
     display: flex;
     width: 100%;
+    background-color: $orange;
     .photo{
         width: 30%;
         img {
@@ -84,33 +114,63 @@
     }
 
     .blue-bg {
-        background-color: rgb(108, 162, 255);
+        background-color: $black-bg;
         width: 100%;
         display: flex;
         position: relative;
-
+        border-top-style: solid;
+        border-top-color: $orange;
+        border-top-width: 5px;
         .white-round{
             z-index: 1;
             position: absolute;
-            background-color: white;
+            background-color: $orange;
             border-radius: 50%;
             width: 40%;
             height: 110%;
-            left: -250px;
+            left: -300px;
             margin-top: -10px;
+
+            @media screen and (min-width: 1024px) and (max-width: 1300px) {
+                left: -200px;
+            }            
         }
 
         .texte {
-            padding-left: 90px;
+            padding-left: 150px;
             width: 100%;
+            padding-top: 5%;
+            color: $beige;
             .titre{
                 text-align: center;
             }
 
             .description {
-                padding-left: 10%;
+                padding-left: 15%;
                 width: 80%;
             }
         }
+    }
+}
+
+#maps {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding-top: 30px;
+    position: relative;
+    z-index: 3;
+    background-color: $black-bg;
+    justify-content: center;
+    border-top-style: solid;
+    border-top-color: $orange;
+    border-top-width: 5px;
+
+    .titre-maps {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: center;
     }
 }
