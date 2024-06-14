@@ -10,6 +10,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./style.css">
         <script src="./carroussel.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlEurVhjQY6gTqLvb0NBM5LimFlCNE164&callback=initMap" async defer></script>
+        <script src="./maps.js"></script>
     </head>
     <body>
         <div class="header">
@@ -56,8 +58,8 @@
                 <h2 id="titre">Besoin d'entretien ?</h2>
                 <h3 id="subtitle">Passer faire un petit tour a notre garage</h3>
             </div>
-            <div class="google-maps">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5377.780380696162!2d6.848797977088819!3d47.628265771191835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47923c90a96d437f%3A0x61b03a6ce7437bed!2s1%20Rue%20Moli%C3%A8re%2C%2090000%20Belfort!5e0!3m2!1sfr!2sfr!4v1718017735868!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div id="map-container" class="google-maps">
+                
             </div>
         </div>
         
