@@ -42,6 +42,9 @@ $orange: #e0a96d;
         .link-maps {
             font-size: 18px;
             padding-top: 9px;
+            text-decoration: none;
+            color: $beige; 
+            font-weight: normal; 
         }
     }
 
@@ -172,5 +175,17 @@ $orange: #e0a96d;
         position: relative;
         flex-direction: column;
         align-items: center;
+    }
+
+    .google-maps {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+
+        #map-container {
+            height: 500px; 
+            width: 800px;
+        }
     }
 }

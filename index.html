@@ -10,8 +10,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./style.css">
         <script src="./carroussel.js"></script>
+        <script src="./maps.js" ></script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlEurVhjQY6gTqLvb0NBM5LimFlCNE164&callback=initMap" async defer></script>
-        <script src="./maps.js"></script>
     </head>
     <body>
         <div class="header">
@@ -20,7 +20,7 @@
                 <h1>CECI EST UN LOGO</h1>
             </div>
             <div class="link">
-                <h2 class="link-maps">Ou nous trouver</h2>
+                <a href="#maps" class="link-maps">Ou nous trouver</a>
             </div>
             <div class="form-button">
                 <h2 class="link-form">Nous contacter</h2>
@@ -58,9 +58,12 @@
                 <h2 id="titre">Besoin d'entretien ?</h2>
                 <h3 id="subtitle">Passer faire un petit tour a notre garage</h3>
             </div>
-            <div id="map-container" class="google-maps">
-                
+            <div class="google-maps">
+                <div id="map-container"></div>
             </div>
+        </div>
+        <div id="contact">
+            
         </div>
         
     </body>

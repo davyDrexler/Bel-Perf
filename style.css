@@ -34,6 +34,9 @@
 .header .link .link-maps {
   font-size: 18px;
   padding-top: 9px;
+  text-decoration: none;
+  color: #ddc3a5;
+  font-weight: normal;
 }
 .header .form-button .link-form {
   padding: 10px 30px 10px 30px;
@@ -158,4 +161,14 @@
   position: relative;
   flex-direction: column;
   align-items: center;
+}
+#maps .google-maps {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+#maps .google-maps #map-container {
+  height: 500px;
+  width: 800px;
 }/*# sourceMappingURL=style.css.map */
