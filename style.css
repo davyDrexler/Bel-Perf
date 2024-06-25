@@ -3,7 +3,7 @@
   margin-left: 0px;
   margin-right: 0px;
 }
-* #titre {
+* .titre-cat {
   font-size: 28px;
   color: #ddc3a5;
   margin: 0;
@@ -171,4 +171,17 @@
 #maps .google-maps #map-container {
   height: 500px;
   width: 800px;
+}
+
+#contact {
+  background-color: #e0a96d;
+}
+#contact h2 {
+  font-size: 28px;
+  color: #201e20;
+  margin: 0;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
 }/*# sourceMappingURL=style.css.map */

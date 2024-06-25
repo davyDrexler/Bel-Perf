@@ -8,7 +8,7 @@ $orange: #e0a96d;
     margin-left: 0px;
     margin-right: 0px;
 
-    #titre {
+    .titre-cat {
         font-size: 28px;
         color: $beige;
         margin: 0;
@@ -187,5 +187,19 @@ $orange: #e0a96d;
             height: 500px; 
             width: 800px;
         }
+    }
+}
+
+#contact {
+    background-color: #e0a96d;
+
+    h2{
+        font-size: 28px;
+        color: $black-bg;
+        margin: 0;
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: center;
+        padding-top: 15px;
     }
 }
