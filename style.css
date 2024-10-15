@@ -5,13 +5,13 @@
 }
 * .titre-cat {
   font-size: 28px;
-  color: #ddc3a5;
+  color: white;
   margin: 0;
   margin-bottom: 15px;
 }
 * #subtitle {
   font-size: 18px;
-  color: #ddc3a5;
+  color: white;
   margin: 0;
 }
 
@@ -19,7 +19,7 @@
   display: flex;
   width: 100%;
   align-items: center;
-  background-color: #201e20;
+  background-color: black;
   margin-top: -10px;
   justify-content: space-between;
 }
@@ -30,23 +30,23 @@
 }
 .header .link {
   display: flex;
-  color: #ddc3a5;
+  color: white;
 }
 .header .link .link-maps {
   font-size: 18px;
   padding-top: 9px;
   text-decoration: none;
-  color: #ddc3a5;
+  color: white;
   font-weight: normal;
 }
 .header .form-button .link-form {
   padding: 10px 30px 10px 30px;
-  color: #201e20;
-  background-color: #ddc3a5;
+  color: white;
+  background-color: red;
   font-size: 24px;
   margin-right: 50px;
-  border-style: solid;
   border-radius: 90px;
+  text-decoration: none;
 }
 
 .carroussel #banner {
@@ -90,7 +90,7 @@
 .info {
   display: flex;
   width: 100%;
-  background-color: #e0a96d;
+  background-color: black;
 }
 .info .photo {
   width: 30%;
@@ -106,18 +106,18 @@
   padding: 50px 100px;
 }
 .info .blue-bg {
-  background-color: #201e20;
+  background-color: red;
   width: 100%;
   display: flex;
   position: relative;
   border-top-style: solid;
-  border-top-color: #e0a96d;
+  border-top-color: black;
   border-top-width: 5px;
 }
 .info .blue-bg .white-round {
   z-index: 1;
   position: absolute;
-  background-color: #e0a96d;
+  background-color: black;
   border-radius: 50%;
   width: 40%;
   height: 110%;
@@ -133,7 +133,7 @@
   padding-left: 150px;
   width: 100%;
   padding-top: 5%;
-  color: #ddc3a5;
+  color: white;
 }
 .info .blue-bg .texte .titre {
   text-align: center;
@@ -151,10 +151,10 @@
   padding-top: 30px;
   position: relative;
   z-index: 3;
-  background-color: #201e20;
+  background-color: black;
   justify-content: center;
   border-top-style: solid;
-  border-top-color: #e0a96d;
+  border-top-color: white;
   border-top-width: 5px;
   padding-bottom: 50px;
 }
@@ -176,11 +176,11 @@
 }
 
 #contact {
-  background-color: #e0a96d;
+  background-color: red;
 }
 #contact h2 {
   font-size: 28px;
-  color: #201e20;
+  color: white;
   margin: 0;
   margin-bottom: 15px;
   display: flex;
@@ -192,7 +192,7 @@
   justify-content: center;
 }
 #contact #contact-form {
-  background-color: #ddc3a5;
+  background-color: white;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
@@ -206,18 +206,18 @@
 #contact #contact-form .form-group label {
   font-size: 16px;
   margin-bottom: 5px;
-  color: #201e20;
+  color: black;
 }
 #contact #contact-form .form-group input, #contact #contact-form .form-group textarea {
   padding: 10px;
   font-size: 14px;
-  border: 1px solid #201e20;
+  border: 1px solid black;
   border-radius: 5px;
   outline: none;
   transition: border-color 0.3s ease;
 }
 #contact #contact-form .form-group input:focus, #contact #contact-form .form-group textarea:focus {
-  border-color: #e0a96d;
+  border-color: black;
 }
 #contact #contact-form .form-group textarea {
   resize: none;
@@ -225,20 +225,20 @@
 #contact #contact-form button {
   width: 100%;
   padding: 10px;
-  background-color: #201e20;
-  color: #ddc3a5;
+  background-color: black;
+  color: white;
   border: none;
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
 }
 #contact #contact-form button:hover {
-  background-color: #060506;
+  background-color: #cc0000;
 }
 
 footer {
-  background-color: #201e20;
-  color: #ddc3a5;
+  background-color: black;
+  color: white;
   margin-top: 50px;
 }
 footer .footer-container {
@@ -253,7 +253,7 @@ footer .footer-container .footer-section {
 footer .footer-container .footer-section h3 {
   font-size: 20px;
   margin-bottom: 10px;
-  color: #e0a96d;
+  color: red;
 }
 footer .footer-container .footer-section ul {
   list-style: none;
@@ -263,20 +263,22 @@ footer .footer-container .footer-section ul li {
   margin-bottom: 8px;
 }
 footer .footer-container .footer-section ul a {
-  text-decoration: none;
-  color: #ddc3a5;
+  color: white;
   transition: color 0.3s ease;
 }
 footer .footer-container .footer-section ul a:hover {
-  color: #e0a96d;
+  color: #b3b3b3;
 }
 footer .footer-container .footer-section p {
   margin: 5px 0;
 }
+footer .footer-container .footer-section a {
+  color: inherit;
+}
 footer .footer-bottom {
   text-align: center;
   padding-top: 15px;
-  border-top: 1px solid #ddc3a5;
+  border-top: 1px solid white;
   padding-bottom: 15px;
 }
 footer .footer-bottom p {

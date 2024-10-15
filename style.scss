@@ -1,6 +1,6 @@
-$black-bg: #201e20;
-$beige: #ddc3a5;
-$orange: #e0a96d;
+$red: red;
+$white: white;
+$black: black;
 
 * {
     font-family: 'Roboto';
@@ -9,14 +9,14 @@ $orange: #e0a96d;
 
     .titre-cat {
         font-size: 28px;
-        color: $beige;
+        color: $white;
         margin: 0;
         margin-bottom: 15px;
     }
 
     #subtitle {
         font-size: 18px;
-        color: $beige;
+        color: $white;
         margin: 0;
     }
 }
@@ -25,7 +25,7 @@ $orange: #e0a96d;
     display: flex;
     width: 100%;
     align-items: center; 
-    background-color: $black-bg;
+    background-color: $black;
     margin-top: -10px;
     justify-content: space-between;
 
@@ -37,13 +37,13 @@ $orange: #e0a96d;
 
     .link {
         display: flex;
-        color: $beige;
+        color: $white;
 
         .link-maps {
             font-size: 18px;
             padding-top: 9px;
             text-decoration: none;
-            color: $beige; 
+            color: $white; 
             font-weight: normal; 
         }
     }
@@ -51,12 +51,12 @@ $orange: #e0a96d;
     .form-button{
         .link-form {
             padding: 10px 30px 10px 30px;
-            color: $black-bg;
-            background-color: $beige;
+            color: $white;
+            background-color: $red;
             font-size: 24px;
             margin-right: 50px;
-            border-style: solid;
             border-radius: 90px;
+            text-decoration: none;
         }
     }
 }
@@ -102,7 +102,7 @@ $orange: #e0a96d;
 .info {
     display: flex;
     width: 100%;
-    background-color: $orange;
+    background-color: $black;
     .photo{
         width: 30%;
         img {
@@ -117,17 +117,17 @@ $orange: #e0a96d;
     }
 
     .blue-bg {
-        background-color: $black-bg;
+        background-color: $red;
         width: 100%;
         display: flex;
         position: relative;
         border-top-style: solid;
-        border-top-color: $orange;
+        border-top-color: $black;
         border-top-width: 5px;
         .white-round{
             z-index: 1;
             position: absolute;
-            background-color: $orange;
+            background-color: $black;
             border-radius: 50%;
             width: 40%;
             height: 110%;
@@ -143,7 +143,7 @@ $orange: #e0a96d;
             padding-left: 150px;
             width: 100%;
             padding-top: 5%;
-            color: $beige;
+            color: $white;
             .titre{
                 text-align: center;
             }
@@ -164,10 +164,10 @@ $orange: #e0a96d;
     padding-top: 30px;
     position: relative;
     z-index: 3;
-    background-color: $black-bg;
+    background-color: $black;
     justify-content: center;
     border-top-style: solid;
-    border-top-color: $orange;
+    border-top-color: $white;
     border-top-width: 5px;
     padding-bottom: 50px;
 
@@ -192,12 +192,12 @@ $orange: #e0a96d;
 }
 
 #contact {
-    background-color: $orange;
+    background-color: $red;
     
 
     h2 {
         font-size: 28px;
-        color: $black-bg;
+        color: $white;
         margin: 0;
         margin-bottom: 15px;
         display: flex;
@@ -211,7 +211,7 @@ $orange: #e0a96d;
     }
 
     #contact-form {
-        background-color: $beige;
+        background-color: $white;
         padding: 20px;
         border-radius: 10px;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
@@ -225,19 +225,19 @@ $orange: #e0a96d;
             label {
                 font-size: 16px;
                 margin-bottom: 5px;
-                color: $black-bg;
+                color: $black;
             }
 
             input, textarea {
                 padding: 10px;
                 font-size: 14px;
-                border: 1px solid $black-bg;
+                border: 1px solid $black;
                 border-radius: 5px;
                 outline: none;
                 transition: border-color 0.3s ease;
                 
                 &:focus {
-                    border-color: $orange;
+                    border-color: $black;
                 }
             }
 
@@ -249,23 +249,23 @@ $orange: #e0a96d;
         button {
             width: 100%;
             padding: 10px;
-            background-color: $black-bg;
-            color: $beige;
+            background-color: $black;
+            color: $white;
             border: none;
             border-radius: 5px;
             font-size: 16px;
             cursor: pointer;
 
             &:hover {
-                background-color: darken($black-bg, 10%);
+                background-color: darken($red, 10%);
             }
         }
     }
 }
 
 footer {
-    background-color: $black-bg;
-    color: $beige;
+    background-color: $black;
+    color: $white;
     margin-top: 50px;
 
     .footer-container {
@@ -280,7 +280,7 @@ footer {
             h3 {
                 font-size: 20px;
                 margin-bottom: 10px;
-                color: $orange;
+                color: $red;
             }
 
             ul {
@@ -292,12 +292,11 @@ footer {
                 }
 
                 a {
-                    text-decoration: none;
-                    color: $beige;
+                    color: $white;
                     transition: color 0.3s ease;
 
                     &:hover {
-                        color: $orange;
+                        color: darken($white, 30%);
                     }
                 }
             }
@@ -305,13 +304,17 @@ footer {
             p {
                 margin: 5px 0;
             }
+
+            a {
+                color: inherit;
+            }
         }
     }
 
     .footer-bottom {
         text-align: center;
         padding-top: 15px;
-        border-top: 1px solid $beige;
+        border-top: 1px solid $white;
         padding-bottom: 15px;
         
         p {
