@@ -14,18 +14,17 @@
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlEurVhjQY6gTqLvb0NBM5LimFlCNE164&callback=initMap" async defer></script>
     </head>
     <body>
-        <div class="header">
+        <nav class="header">
             <div class="logo">
-                <!-- A REMPLACER PAR LE LOGO -->
-                <h1>CECI EST UN LOGO</h1>
+                <h1>Bel.Perf'Auto</h1>
             </div>
             <div class="link">
                 <a href="#maps" class="link-maps">Ou nous trouver</a>
             </div>
             <div class="form-button">
-                <h2 class="link-form">Nous contacter</h2>
+                <a href="#contact" class="link-form">Nous contacter</a>
             </div>
-        </div>
+        </nav>
         <div class="carroussel">
             <div id="banner">
                 <img class="banner-img" src="./assets/slideshow/slide1.webp" alt="promotions sur le site">
@@ -66,7 +65,50 @@
             <div class="title">
                 <h2 class="titre-contact">Nous contacter</h2>
             </div>
+            <div class="form-container">
+                <form id="contact-form" action="https://formspree.io/f/xgveewkj" method="POST">
+                    <div class="form-group">
+                        <label for="nom">Nom:</label>
+                        <input type="text" id="nom" name="nom" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="prenom">Prénom:</label>
+                        <input type="text" id="prenom" name="prenom" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="voiture">Modèle de la voiture:</label>
+                        <input type="text" id="voiture" name="voiture" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Pourquoi demandez-vous un rendez-vous ?</label>
+                        <textarea id="description" name="description" rows="4" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Envoyer</button>
+                    </div>
+                </form>
+            </div>
+            <footer>
+                <div class="footer-container">
+                    <div class="footer-section">
+                        <h3>Nous suivre</h3>
+                        <ul class="social-links">
+                            <li><a href="https://www.facebook.com/profile.php?id=100079064884054" target="_blank">Facebook</a></li>
+                            <li><a href="https://www.instagram.com/christophe.de.murcia/" target="_blank">Instagram</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Contact</h3>
+                        <p>Adresse : 1 Rue Moilère, Belfort</p>
+                        <a href="tel:+33627214918">06 27 21 49 18</a></p>
+                        <p>Email : <a href="mailto:garage@example.com">garage@example.com</a></p>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 Bel.Perf'Auto. Tous droits réservés.</p>
+                    <p>Créer par <a href="https://davydrexler.github.io/portfolio/">Drexler Davy</a></p>
+                </div>
+            </footer>
         </div>
-        
     </body>
 </html>
