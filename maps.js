@@ -10,7 +10,7 @@ function initMap() {
             <h1>Bel-Perf'auto</h1>
             <p><b>Adresse :</b> 1 Rue Molière, 90000 Belfort</p>
             <p><b>Horaires :</b> Lundi - Vendredi : 8h - 18h</p>
-            <p><b>Téléphone :</b> +33 1 23 45 67 89</p>
+            <p><b>Téléphone :</b> 06.27.21.49.18</p>
         </div>
     `;
 
