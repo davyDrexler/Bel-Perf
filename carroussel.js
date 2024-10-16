@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', (event) => {
     const slides = [
-        { "image": "slide1.webp" },
-        { "image": "slide2.webp" }
+        { "image": "cle_reproduction.webp" },
+        { "image": "stage.webp" }
     ];
 
     let currentSlide = 0;
@@ -12,8 +12,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     function showSlide(index) {
         bannerImg.src = `./assets/slideshow/${slides[index].image}`;
-        // Si vous avez une tagline à afficher, décommentez la ligne suivante et ajoutez les tagline dans votre tableau slides
-        // tagLine.innerHTML = slides[index].tagLine;
     }
 
     function createPaginationDots() {

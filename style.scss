@@ -4,8 +4,6 @@ $black: black;
 
 * {
     font-family: 'Roboto';
-    margin-left: 0px;
-    margin-right: 0px;
 
     .titre-cat {
         font-size: 28px;
@@ -21,12 +19,18 @@ $black: black;
     }
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
 .header {
     display: flex;
     width: 100%;
     align-items: center; 
     background-color: $black;
-    margin-top: -10px;
     justify-content: space-between;
 
     .logo {
@@ -136,7 +140,7 @@ $black: black;
 
             @media screen and (min-width: 1024px) and (max-width: 1300px) {
                 left: -200px;
-            }            
+            }
         }
 
         .texte {

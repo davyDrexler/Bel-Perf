@@ -1,7 +1,5 @@
 * {
   font-family: "Roboto";
-  margin-left: 0px;
-  margin-right: 0px;
 }
 * .titre-cat {
   font-size: 28px;
@@ -15,12 +13,18 @@
   margin: 0;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
 .header {
   display: flex;
   width: 100%;
   align-items: center;
   background-color: black;
-  margin-top: -10px;
   justify-content: space-between;
 }
 .header .logo {
